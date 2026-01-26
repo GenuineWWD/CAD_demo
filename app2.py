@@ -11,7 +11,8 @@ from openai import OpenAI
 
 # ================= 1. 配置区域 =================
 API_KEY = "EMPTY" 
-BASE_URL = "http://10.184.17.223:12345/v1"
+# BASE_URL = "http://10.184.17.223:12345/v1"
+BASE_URL = "http://localhost:12345/v1"
 MODEL_NAME = "Qwen3-8B"
 
 # ================= 2. 日志与工具函数 =================
@@ -194,6 +195,7 @@ if prompt := st.chat_input("例如：画一个五角星"):
                 )
                 
                 content = response.choices[0].message.content
+                print(response)
                 code = extract_code(content)
                 
                 if show_debug:

@@ -17,6 +17,8 @@ from ezdxf.addons.drawing.matplotlib import MatplotlibBackend
 API_KEY = "EMPTY"
 # 请确保你的 LLM 服务地址正确
 BASE_URL = "http://10.184.17.223:12345/v1" 
+BASE_URL = "http://localhost:12345/v1" 
+
 MODEL_NAME = "Qwen3-8B"
 OUTPUT_FILE = "generated_drawing.dxf"
 

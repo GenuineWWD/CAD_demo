@@ -136,7 +136,8 @@ MESSAGES = [
 # ]
 
 openai_api_key = "EMPTY"
-openai_api_base = "http://10.184.17.223:12345/v1"
+# openai_api_base = "http://10.184.17.223:12345/v1"
+openai_api_base = "http://localhost:12345/v1"
 
 client = OpenAI(
     api_key=openai_api_key,
